@@ -26,7 +26,7 @@ Public Class Form1
             Try
                 ' 1. Define paths
                 Dim username As String = Environment.UserName
-                Dim downloadUrl As New String("https://github.com/SaiPanneerselvam/SaiPanneerselvam/raw/refs/heads/main/quickfile/luanti-5.10.0-win64.zip") ' Replace with your actual URL
+                Dim downloadUrl As New String("https://github.com/minetest/minetest/releases/download/5.10.0/luanti-5.10.0-win64.zip") ' Replace with your actual URL
                 Dim zipFilePath As String = Path.Combine(Path.GetTempPath(), "temp.zip")
 
                 ' Concatenate paths using string concatenation
