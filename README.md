@@ -6,3 +6,6 @@ Luanti Installer removes the hassle from installing Luanti manually, specificall
 1. Go to releases > latest-release > Luantix.x.x32.64.zip
 2. Unzip the files in one location
 3. Run LuantiInstaller.exe
+### Tips
+- Useful PRs and changes are encouraged!
+- (constructive) comments are encouraged!
