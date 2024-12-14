@@ -30,7 +30,22 @@ Public Class Form1
 
                 ' Concatenate paths using string concatenation
                 Dim extractPath As String = "C:\Users\" & username & "\Luanti"
-                Dim shortcutPath As String = "C:\Users\" & username & "\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Luanti 5.10.0.lnk"
+                Dim shortcutPath As String
+                If Settings.usingcustomlocation = False Then
+
+                    shortcutPath = "C:\Users\" & username & "\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Luanti 5.10.0.lnk"
+
+                Else
+                    Try
+                        shortcutPath = Settings.boxinstalllocation
+                    Catch ex As Exception
+                        MsgBox("The location that was specified for installation in the settings page is not correctly formatted, or the location my not exist.")
+                        MsgBox("Terminating Install...")
+                        MsgBox("App will close now. (press OK or Close button to finish...)")
+                        Me.Close()
+                    End Try
+                End If
+
                 Dim minetestExePath As String = extractPath & "\bin\luanti.exe"
 
                 ' 2. Download the ZIP file
@@ -116,5 +131,9 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Settings.ShowDialog()
     End Sub
 End Class

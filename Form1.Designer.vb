@@ -27,6 +27,7 @@ Partial Class Form1
         Me.option1 = New System.Windows.Forms.Button()
         Me.closebutton = New System.Windows.Forms.Button()
         Me.option2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'title
@@ -53,7 +54,7 @@ Partial Class Form1
         'option1
         '
         Me.option1.Location = New System.Drawing.Point(491, 315)
-        Me.option1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.option1.Margin = New System.Windows.Forms.Padding(4)
         Me.option1.Name = "option1"
         Me.option1.Size = New System.Drawing.Size(100, 28)
         Me.option1.TabIndex = 2
@@ -66,7 +67,7 @@ Partial Class Form1
         Me.closebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.closebutton.ForeColor = System.Drawing.Color.White
         Me.closebutton.Location = New System.Drawing.Point(531, -1)
-        Me.closebutton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.closebutton.Margin = New System.Windows.Forms.Padding(4)
         Me.closebutton.Name = "closebutton"
         Me.closebutton.Size = New System.Drawing.Size(100, 28)
         Me.closebutton.TabIndex = 3
@@ -76,12 +77,24 @@ Partial Class Form1
         'option2
         '
         Me.option2.Location = New System.Drawing.Point(368, 315)
-        Me.option2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.option2.Margin = New System.Windows.Forms.Padding(4)
         Me.option2.Name = "option2"
         Me.option2.Size = New System.Drawing.Size(100, 28)
         Me.option2.TabIndex = 4
         Me.option2.UseVisualStyleBackColor = True
         Me.option2.Visible = False
+        '
+        'Button1
+        '
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(1, 307)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(38, 37)
+        Me.Button1.TabIndex = 5
+        Me.Button1.Text = "🎛️"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -89,12 +102,13 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(627, 348)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.option2)
         Me.Controls.Add(Me.closebutton)
         Me.Controls.Add(Me.option1)
         Me.Controls.Add(Me.description)
         Me.Controls.Add(Me.title)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximumSize = New System.Drawing.Size(645, 395)
         Me.MinimumSize = New System.Drawing.Size(645, 395)
         Me.Name = "Form1"
@@ -110,5 +124,5 @@ Partial Class Form1
     Friend WithEvents option1 As System.Windows.Forms.Button
     Friend WithEvents closebutton As System.Windows.Forms.Button
     Friend WithEvents option2 As System.Windows.Forms.Button
-
+    Friend WithEvents Button1 As Button
 End Class
