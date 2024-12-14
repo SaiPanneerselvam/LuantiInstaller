@@ -1,0 +1,28 @@
+﻿<xml>
+	<system>
+		<luanti>
+			<configuration>
+				<setup>
+					<xln name="ee.name" value="luanti"/>
+					<xln
+						name="ee.version"
+						value="5.10.0"
+						local="none"
+						public="false"
+						copy="false"
+					/>
+					<xln
+						name="ee.pox"
+						value="46"
+						protocol="unknown"
+					/>
+					<xln name="ee.friendly.app.name" value="Luanti 5.10.0"/>
+					<xln name="ee.program.name" value="luanti_installer_5.10.0"/>
+					<xln name="ee.friendly.program.name" value="Luanti Installer"/>
+					<xln name="ee.friendly.complex.program.name" value="Luanti Installer 5.10.0"/>
+					<xln name="ee.friendly.program.version" value="5.10.0"/>
+				</setup>
+			</configuration>
+		</luanti>
+	</system>
+</xml>
