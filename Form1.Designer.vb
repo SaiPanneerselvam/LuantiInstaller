@@ -66,7 +66,7 @@ Partial Class Form1
         Me.closebutton.BackColor = System.Drawing.Color.Red
         Me.closebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.closebutton.ForeColor = System.Drawing.Color.White
-        Me.closebutton.Location = New System.Drawing.Point(531, -1)
+        Me.closebutton.Location = New System.Drawing.Point(525, 4)
         Me.closebutton.Margin = New System.Windows.Forms.Padding(4)
         Me.closebutton.Name = "closebutton"
         Me.closebutton.Size = New System.Drawing.Size(100, 28)
