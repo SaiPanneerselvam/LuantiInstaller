@@ -64,9 +64,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.MinetestInstaller5._9._0.My.MySettings
+        Friend ReadOnly Property Settings() As Global.LuantiInstaller.My.MySettings
             Get
-                Return Global.MinetestInstaller5._9._0.My.MySettings.Default
+                Return Global.LuantiInstaller.My.MySettings.Default
             End Get
         End Property
     End Module

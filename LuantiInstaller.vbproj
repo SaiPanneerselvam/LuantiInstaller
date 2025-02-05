@@ -7,8 +7,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{55ABB348-DC35-4525-9D59-9468E9C6B7F1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>MinetestInstaller5._9._0.My.MyApplication</StartupObject>
-    <RootNamespace>MinetestInstaller5._9._0</RootNamespace>
+    <StartupObject>LuantiInstaller.My.MyApplication</StartupObject>
+    <RootNamespace>LuantiInstaller</RootNamespace>
     <AssemblyName>LuantiInstaller</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
@@ -158,6 +158,9 @@
       <WrapperTool>tlbimp</WrapperTool>
       <Isolated>False</Isolated>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="system.luanticonfiguration.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

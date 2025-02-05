@@ -21,6 +21,12 @@
 					<xln name="ee.friendly.program.name" value="Luanti Installer"/>
 					<xln name="ee.friendly.complex.program.name" value="Luanti Installer 5.10.0"/>
 					<xln name="ee.friendly.program.version" value="5.10.0"/>
+					<xln name="ee.program.number" value="46"/>
+					<![CDATA[new]]>
+					<!-- Adds a new program key without request  -->
+					<!-- fun, the program value failed to update! -->
+					<!-- then I have no clue what is going on.     -->
+					<?unsupported?>
 				</setup>
 			</configuration>
 		</luanti>
